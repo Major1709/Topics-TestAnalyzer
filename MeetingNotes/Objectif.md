@@ -1,8 +1,12 @@
 # Objectif : Analyseur de tests et graphe de fingerprints
 
+
+lien code: https://github.com/Major1709/Pharo
+
+
 ## Contexte
 Lorsqu’un projet contient des tests unitaires qui échouent, il est difficile de savoir par lequel commencer.  
-L’article *Ordering Broken Unit Tests for Focused Debugging* (Gaelli, Lanza, Nierstrasz, Wuyts, ICSM 2004) propose une stratégie : identifier le test le plus **spécifique** (celui qui couvre le moins de méthodes) car le corriger permet souvent de corriger les autres.
+L’article *Ordering Broken Unit Tests for Focused Debugging* (Gaelli, Lanza, Nierstrasz, Wuyts, ICSM 2004) propose une stratégie : identifier le test le plus spécifique car le corriger permet souvent de corriger les autres.
 
 ## Étape 1 – Message Analyseur
 - Pour chaque méthode de test, on construit un **fingerprint** : l’ensemble des messages (selectors) utilisés par la méthode.
